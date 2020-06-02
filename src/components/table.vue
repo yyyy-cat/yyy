@@ -360,7 +360,7 @@
         let _this = this
          axios.get(`http://120.78.186.60:8080/test5/toAnalysis?startDate=${_this.value1}&endDate=${_this.value2}&departmentName=${_this.inputvalue}`).then((res)=> {
           _this.tableDatas = _this.changeData(res.data.data);
-           console.log( this.tableDatas)
+           console.log( this.tableDatas,"123")
         }) 
       }
     },
