@@ -1,0 +1,53 @@
+header{
+    display: flex;
+  }
+
+ .input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    width: 300px;
+    height: 30px;
+    border: 1px solid #000;
+    /* background: yellow; */
+    margin-right: 100px;
+  }
+  .section{
+      display: block;
+      width: 50px;
+  }
+  /deep/.input .el-input{
+    width: 200px;
+    font-size: 20px;
+  }
+   /deep/ .input .el-input input{
+    height: 30px;
+    background: none;
+    border: none;
+  }
+
+  /deep/.input .el-range-editor.el-input__inner{
+    width: 400px;
+    height: 80px;
+  }
+  /deep/.el-date-picker{
+    width: 1500px !important;
+    height: 500px !important;
+    height: 40px !important;
+  }
+  /deep/.el-date-table td div{
+    padding: 50px 0 !important;
+  }
+  /deep/.el-date-table td span{
+        width: 150px !important;
+        height: 150px !important;
+        line-height: 150px !important;
+  }
+  .time{
+    display: flex;
+}
+  .dateName{
+    width: 1500px;
+    height: 400px;
+  }
