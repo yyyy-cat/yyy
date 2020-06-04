@@ -3,11 +3,12 @@
     <el-table :data="data" row-key='data' height="600" show-summary >
       <my-column v-for="(item,index) in col" :key="index" :col="item"></my-column>
        <div slot="append" style="text-align: center">
-        <table cellspacing="0" border="0"  class="tr" style="width: 4800px">
+         <div  v-for="(ite,ind) in 100" :key="ind" class="tr" >{{ite}}</div>
+        <!-- <table cellspacing="0" border="0"  class="tr" style="width: 4800px">
           <tr v-for="(ite,ind) in 100" :key="ind" >
             <td class="td">{{ite}}</td>
           </tr>
-        </table>
+        </table> -->
     </div>
     </el-table>
     
